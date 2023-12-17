@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Navbar from './components/navbar';
+import Link from 'next/link';
 
 const LandingPage = () => {
   return (
@@ -20,12 +21,16 @@ const LandingPage = () => {
             Join a community of storytellers shaping interactive and captivating narratives together.
           </p>
           <div className="flex items-center justify-center space-x-4">
+            <Link href="/craft">
             <button className="bg-blue-500 px-6 py-3 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
               Get Started
             </button>
+            </Link>
+            <Link href="/about">
             <a href="#how-it-works" className="text-blue-300 hover:underline">
               Learn How It Works
             </a>
+            </Link>
           </div>
         </motion.div>
       </section>
