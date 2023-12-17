@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Cairo } from 'next/font/google'
 
+
 const cairo = Cairo({
   display: 'swap',
   weights: [400, 700],
@@ -11,8 +12,10 @@ const cairo = Cairo({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={cairo.className}>
-      <body className="text-white">{children}</body>
-    </html>
+      <html lang="en" className={cairo.className}>
+        <body className="text-white bg-gradient-to-r from-purple-600 to-indigo-600">
+          {children}       
+        </body>
+      </html>  
   )
 }
