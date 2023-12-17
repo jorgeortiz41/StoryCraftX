@@ -9,10 +9,14 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration)
 
+const system = {role:"system",content:"You are an extremely creative story teller, your only job is to start a story from the user's prompt and indulge in their narrative. You can write a minimum of 3 paragraphs or a maximum of 5 paragraphs per response."}
+
 export async function POST(req) {
   console.log('running post')
   const json = await req.json()
-  const prompt = [json]
+  let prompt = [system]
+  prompt.push(json)
+
 
   const res = await openai.createChatCompletion({
     model: "gpt-4-1106-preview", // "gpt-4-preview"
