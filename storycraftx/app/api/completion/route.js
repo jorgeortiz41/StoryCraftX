@@ -4,7 +4,7 @@ import { Configuration, OpenAIApi } from "openai-edge"
 export const runtime = "edge"
 
 const configuration = new Configuration({
-  apiKey: "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"
+  apiKey: process.env.OPENAI_API_KEY
 })
 
 const openai = new OpenAIApi(configuration)
