@@ -62,16 +62,10 @@ function craft() {
           />
           <button type="submit" className="mt-2 px-4 py-2 rounded-lg bg-blue-500 hover:bg-purple-600 text-white w-48 shadow-md">Submit</button>
         </form>
-        <div className="flex flex-col items-center justify-center space-x-4 bg-white text-black rounded-lg mt-12 p-6 text-lg">
-          Premise: Hancock showed his cock
-          <br></br>
-          Narrative: As Hancock embarked on this unexpected adventure, he discovered that the island held secrets beyond its sandy beaches and vibrant culture. There were whispers of a mystical portal hidden within the lush rainforest, capable of transporting people through time and space.
-
-As the two forged an unlikely bond, Hancock couldn't shake the feeling that his presence in San Juan was no accident. Little did he know that the portal's mysterious powers were about to unravel a tale of wartime espionage, ancient legends, and the unforeseen intersections of history.
-        </div>
         {response !== '' ? 
           <div className="flex flex-col items-center justify-center space-x-4 bg-white text-black rounded-sm mt-12 p-10">
-            Premise: {content}\n
+            Premise: {content}
+            <br></br>
             Narrative: {response}
           </div>
         : 
