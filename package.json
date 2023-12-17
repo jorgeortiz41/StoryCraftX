@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "framer-motion": "^10.16.16"
+    "ai": "^2.2.29",
+    "framer-motion": "^10.16.16",
+    "openai": "^4.23.0",
+    "openai-edge": "^1.2.2"
   }
 }
