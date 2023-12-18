@@ -26,10 +26,8 @@ const LandingPage = () => {
               Get Started
             </button>
             </Link>
-            <Link href="/about">
-            <a href="#how-it-works" className="text-blue-300 hover:underline">
+            <Link href="/about" className="text-blue-300 hover:underline">
               Learn How It Works
-            </a>
             </Link>
           </div>
         </motion.div>
