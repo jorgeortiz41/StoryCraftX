@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import Navbar from "../components/navbar"
+import Nav from "../components/Nav"
 function craft() {
   const [content, setContent] = useState('')
   const [response, setResponse] = useState('')
@@ -50,7 +50,7 @@ function craft() {
 
   return (
     <>
-    <Navbar />
+    <Nav />
     <div className="min-h-screen flex flex-col items-center justify-center">
       <h1 className="text-5xl font-extrabold">Start with a Premise</h1>
       <div className="w-[50%] items-center justify-center">

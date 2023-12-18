@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 
-function navbar() {
+function Nav() {
   return (
     <nav className="fixed top-0 w-full flex justify-between p-5 bg-transparent z-50 bg-gradient-to-r from-purple-600 to-indigo-600">
       <Link href="/" className="flex items-center space-between text-2xl font-bold">
@@ -26,4 +26,4 @@ function navbar() {
   )
 }
 
-export default navbar
+export default Nav
