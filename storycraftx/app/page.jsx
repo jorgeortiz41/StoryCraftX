@@ -1,13 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion';
-import Nav from './components/Nav';
 import Link from 'next/link';
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <Nav />
       {/* Modern Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center">
         <motion.div 

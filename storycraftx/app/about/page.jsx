@@ -2,15 +2,12 @@
 
 import React from 'react'
 import Image from 'next/image';
-import Nav from '../components/Nav';
 import { motion } from 'framer-motion';
 
 function about() {
   return (
     <>
-    <Nav />
     <div className="min-h-screen flex items-center justify-center">
-      <Nav />
       {/* Modern About Section */}
       <section className="min-h-screen flex flex-col items-center justify-center">
         <motion.div 
