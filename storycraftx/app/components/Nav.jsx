@@ -81,7 +81,7 @@ function Nav() {
           StoryCraft X
         </Link>
       <div className='flex space-x-8 text-xl items-center'>
-        <Link href="/craft" className="mx-2  hover:shadow-xl rounded-md p-2">Discover</Link>
+        <Link href="/discover" className="mx-2  hover:shadow-xl rounded-md p-2">Discover</Link>
         <Link href="/craft" className="mx-2  hover:shadow-xl rounded-md p-2">Craft</Link>
         <Link href="/about" className="mx-2  hover:shadow-xl rounded-md p-2">About</Link>
         <AuthButton />
